@@ -9,6 +9,8 @@ TagManager:
   - Red
   - Yellow
   - ColorChanger
+  - Spawner
+  - Ignorable
   layers:
   - Default
   - TransparentFX

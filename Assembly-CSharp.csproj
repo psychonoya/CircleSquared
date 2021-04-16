@@ -60,6 +60,8 @@
     <Compile Include="Assets\Script\Rotator.cs" />
     <Compile Include="Assets\Script\CameraController.cs" />
     <Compile Include="Assets\HUDSettings.cs" />
+    <Compile Include="Assets\ProceduralSpawnerController.cs" />
+    <Compile Include="Assets\LevelController.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

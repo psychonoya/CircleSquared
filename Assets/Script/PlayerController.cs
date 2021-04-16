@@ -38,10 +38,12 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "ColorChanger")
+        bool neverDone = true;
+
+        if (collision.tag == "ColorChanger" && neverDone == true)
         {
             SetRandomColor();
-            Destroy(collision.gameObject);
+            neverDone = false;
             return;
         }
 
@@ -49,7 +51,7 @@ public class PlayerController : MonoBehaviour
         {
 
         }
-        else if(collision.tag != currentColor)
+        if (collision.tag != "Spawner" && collision.tag != currentColor && collision.tag != "Ignorable")
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
